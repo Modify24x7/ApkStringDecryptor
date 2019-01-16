@@ -41,4 +41,4 @@ Decrypt String in classes.dex without decompile
 	(Ljava/lang/String;)Ljava/lang/String;
 	
 ### License
-    dexlib2-2.2.5: [The 3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause)
+    dexlib2-2.2.5: The 3-Clause BSD License
