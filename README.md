@@ -6,12 +6,11 @@ Decrypt String in classes.dex without decompile
  asd/Main.java:->
  -------------
  
-   /***
-    * Class name: Lcom/example/app/MyClass; 
-    * method name: MyMethod 
-	* list of parameters: Ljava/lang/String; 
-	* return type: Ljava/lang/String;
-	*/
+   
+   // Class name: Lcom/example/app/MyClass; 
+   // method name: MyMethod 
+   // list of parameters: Ljava/lang/String; 
+   // return type: Ljava/lang/String;
 	
 	ImmutableMethodReference immutableMethodReference = new ImmutableMethodReference("Lcom/example/app/MyClass;", "MyMethod", Lists.newArrayList("Ljava/lang/String;"), "Ljava/lang/String;");
 	
