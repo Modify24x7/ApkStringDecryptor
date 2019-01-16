@@ -1,29 +1,29 @@
 # ApkStringDecryptor
 Decrypt String in classes.dex without decompile
 
-# Example
+### Example
 
- asd/Main.java:->
- -------------
+#### asd/Main.java:->
+#### -------------
  
    
-   // Class name: Lcom/example/app/MyClass; 
-   // method name: MyMethod 
-   // list of parameters: Ljava/lang/String; 
-   // return type: Ljava/lang/String;
+   - Class name: Lcom/example/app/MyClass; 
+   - method name: MyMethod 
+   - list of parameters: Ljava/lang/String; 
+   - return type: Ljava/lang/String;
 	
 	ImmutableMethodReference immutableMethodReference = new ImmutableMethodReference("Lcom/example/app/MyClass;", "MyMethod", Lists.newArrayList("Ljava/lang/String;"), "Ljava/lang/String;");
 	
-   // Keep Call
+   - Keep Call
    
 	decryptString("test\\classes.dex", "test\\classes-decrypt.dex", 16, immutableMethodReference.toString(), false, immutableMethodReference);
 	
-   // Remove Call
+   - Remove Call
    
 	decryptString("test\\classes.dex", "test\\classes-decrypt2.dex", 16, immutableMethodReference.toString(), true, immutableMethodReference);
 	
- asd/transformers/StringDecryptor.java:->
- -------------------------------------
+#### asd/transformers/StringDecryptor.java:->
+#### -------------------------------------
  
    // Note: Don't change method name and parameter
    
@@ -40,5 +40,5 @@ Decrypt String in classes.dex without decompile
 
 	}
 
-# Support
+### Support
 	(Ljava/lang/String;)Ljava/lang/String;
