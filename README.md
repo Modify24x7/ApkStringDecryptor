@@ -4,8 +4,6 @@ Decrypt String in classes.dex without decompile
 ### Example
 
 #### asd/Main.java:->
-#### -------------
- 
    
    - Class name: Lcom/example/app/MyClass; 
    - method name: MyMethod 
@@ -23,7 +21,6 @@ Decrypt String in classes.dex without decompile
 	decryptString("test\\classes.dex", "test\\classes-decrypt2.dex", 16, immutableMethodReference.toString(), true, immutableMethodReference);
 	
 #### asd/transformers/StringDecryptor.java:->
-#### -------------------------------------
  
    // Note: Don't change method name and parameter
    
@@ -42,3 +39,6 @@ Decrypt String in classes.dex without decompile
 
 ### Support
 	(Ljava/lang/String;)Ljava/lang/String;
+	
+### License
+    dexlib2-2.2.5: [The 3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause)
