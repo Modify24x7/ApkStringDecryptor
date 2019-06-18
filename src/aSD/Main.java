@@ -33,12 +33,13 @@ public class Main {
 				"MyMethod", Lists.newArrayList("Ljava/lang/String;"), "Ljava/lang/String;");
 		
 		// Keep call
-		decryptString("test\\classes.dex", "test\\classes-decrypt.dex", 16, immutableMethodReference.toString(), false,
+		decryptString("test\\classes.dex", "test\\classes-D.dex", 15, immutableMethodReference.toString(), false,
 				immutableMethodReference);
 		
 		// Remove call
-		decryptString("test\\classes.dex", "test\\classes-decrypt2.dex", 16, immutableMethodReference.toString(), true,
+		decryptString("test\\classes.dex", "test\\classes-DRC.dex", 15, immutableMethodReference.toString(), true,
 				immutableMethodReference);
+		
 	}
 
 	/***

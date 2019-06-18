@@ -14,11 +14,11 @@ Decrypt String in classes.dex without decompile
 	
    - Keep Call
    
-	decryptString("test\\classes.dex", "test\\classes-decrypt.dex", 16, immutableMethodReference.toString(), false, immutableMethodReference);
+	decryptString("test\\classes.dex", "test\\classes-D.dex", 15, immutableMethodReference.toString(), false, immutableMethodReference);
 	
    - Remove Call
    
-	decryptString("test\\classes.dex", "test\\classes-decrypt2.dex", 16, immutableMethodReference.toString(), true, immutableMethodReference);
+	decryptString("test\\classes.dex", "test\\classes-DRC.dex", 15, immutableMethodReference.toString(), true, immutableMethodReference);
 	
 #### asd/transformers/StringDecryptor.java:->
  
@@ -27,18 +27,15 @@ Decrypt String in classes.dex without decompile
 	public static String decryptor(String str) {
 		
 		// Replace with your code
-		
-		try {
-			return new String(Base64.decode(str));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			throw new RuntimeException(e);
-		}
-
+	      ...
+		// Code
 	}
 
 ### Support
 	(Ljava/lang/String;)Ljava/lang/String;
+	Custom StackTraceElement
 	
 ### License
-    dexlib2-2.2.5: The 3-Clause BSD License
+    dexlib2: The 3-Clause BSD License
+    guava: http://www.apache.org/licenses/LICENSE-2.0.txt
+    jsr350: http://www.apache.org/licenses/LICENSE-2.0.txt
