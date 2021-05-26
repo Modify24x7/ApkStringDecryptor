@@ -1,4 +1,5 @@
-# ApkStringDecryptor
+[ApkStringDecryptor](https://github.com/Modify24x7/ApkStringDecryptor/)
+====================
 Decrypt String in classes.dex without decompile
 
 ### Example
